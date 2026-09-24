@@ -4,6 +4,7 @@ $users = [
         "id" => 0,
         "name" => "Toni Fernandez",
         "username" => "admin",
+        //Desem el password encriptat
         "password" => password_hash('123', PASSWORD_DEFAULT),
         "mail" => "toni.fernandez@cirvianum.cat",
         "rol" => "admin",
