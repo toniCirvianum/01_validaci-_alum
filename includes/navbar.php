@@ -1,5 +1,7 @@
 <?php
 //SCript per gestionar el idioma de la pgaina
+//desem el nom de la pagina per passar-lo al servidor
+$currentPAge = basename($_SERVER['PHP_SELF']);
 
 
 $text = [];
@@ -26,15 +28,15 @@ if ($_SESSION['LANG_APP'] == 'an') {
         <a class="nav-link active" href="../views/login.php"><?= $text['login'] ?></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><?= $text['login'] ?></a>
+        <a class="nav-link" href="#"><?= $text['register'] ?></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Idioma
         </a>
         <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="../controllers/language_controller.php?lang=ca"><?= $text['ca'] ?></a></li>
-          <li><a class="dropdown-item" href="../controllers/language_controller.php?lang=an"><?= $text['an'] ?></a></li>
+          <li><a class="dropdown-item" href="../controllers/language_controller.php?lang=ca&redirect=<?= $currentPAge ?>"><?= $text['lang_ca'] ?></a></li>
+          <li><a class="dropdown-item" href="../controllers/language_controller.php?lang=an&redirect=<?= $currentPAge ?>"><?= $text['lang_an'] ?></a></li>
         </ul>
       </li>
 
