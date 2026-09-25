@@ -30,8 +30,8 @@ if($_SESSION['LANG_APP']=='an') {
             Idioma
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Català</a></li>
-            <li><a class="dropdown-item" href="#">Anglès</a></li>
+            <li><a class="dropdown-item" href="../controllers/language_controller.php?lang=ca">Català</a></li>
+            <li><a class="dropdown-item" href="../controllers/language_controller.php?lang=an">Anglès</a></li>
 
           </ul>
         </li>
