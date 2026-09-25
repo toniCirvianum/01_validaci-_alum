@@ -1,3 +1,17 @@
+<?php
+//SCript per gestionar el idioma de la pgaina
+
+
+$text = [];
+if ($_SESSION['LANG_APP'] == 'ca') {
+  include("../language/ca.php");
+}
+if ($_SESSION['LANG_APP'] == 'an') {
+  include("../language/an.php");
+}
+
+
+?>
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="../views/home.php">
@@ -9,18 +23,18 @@
     </a>
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Login</a>
+        <a class="nav-link active" href="../views/login.php"><?= $text['login'] ?></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Crea un compte</a>
+        <a class="nav-link" href="#"><?= $text['login'] ?></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-         Idioma
+          Idioma
         </a>
         <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#">Catalaà</a></li>
-          <li><a class="dropdown-item" href="#">Anglès </a></li>
+          <li><a class="dropdown-item" href="../controllers/language_controller.php?lang=ca"><?= $text['ca'] ?></a></li>
+          <li><a class="dropdown-item" href="../controllers/language_controller.php?lang=an"><?= $text['an'] ?></a></li>
         </ul>
       </li>
 
