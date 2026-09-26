@@ -7,7 +7,9 @@
                 action="../controllers/register_controller.php"
                 method="POST"
                 class="border p-4 bg-light"
+                
                 enctype="multipart/form-data">
+                <!-- enctype basic per envair fitxers al servidor -->
 
                 <div class="mb-3">
                     <label for="name" class="form-label">Nom i cognoms</label>
@@ -46,7 +48,7 @@
 
                 <div class="mb-3">
                     <label for="mail" class="form-label">Correu electrònic</label>
-                    <input type="text" name="mail" class="form-control" required>
+                    <input type="mail" name="mail" class="form-control" required>
                 </div>
 
                 <div class="mb-3">

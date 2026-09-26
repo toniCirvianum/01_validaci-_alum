@@ -28,7 +28,7 @@ if ($_SESSION['LANG_APP'] == 'an') {
         <a class="nav-link active" href="../views/login.php"><?= $text['login'] ?></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><?= $text['register'] ?></a>
+        <a class="nav-link" href="../views/register.php"><?= $text['register'] ?></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

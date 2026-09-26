@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     if (checkLogin($username,$password,$_SESSION['users'])) {
         //creem la variables de sessio per guardar l'usuari autenticat
         $_SESSION['user_logged']=checkLogin($username,$password,$_SESSION['users']);
-        header('Location: ../views/products');
+        header('Location: ../views/products.php');
         exit;
     }
 
